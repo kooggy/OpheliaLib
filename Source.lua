@@ -113,9 +113,10 @@ local OLib = {}
         UICorner_3.Parent = TextButton
         UITextSizeConstraint.Parent = TextButton
         UITextSizeConstraint.MaxTextSize = 15
+    end
 
+    function OLib:CreateTab(tab)
         local Tab =  Instance.new("TextButton")
-
         Tab.Name = "Tab Name"
         Tab.Parent = Tabs
         Tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -124,7 +125,7 @@ local OLib = {}
         Tab.Position = UDim2.new(0, 0, -0.0188361704, 0)
         Tab.Size = UDim2.new(0.235849142, 0, 0.999999821, 0)
         Tab.Font = Enum.Font.SourceSans
-        Tab.Text = text
+        Tab.Text = tab
         Tab.TextColor3 = Color3.fromRGB(186, 186, 186)
         Tab.TextScaled = true
         Tab.TextSize = 14.000
@@ -134,7 +135,7 @@ local OLib = {}
         UIListLayout_2.Parent = Tabs
         UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
         UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-    end
+end
     return OLib
 end
 
